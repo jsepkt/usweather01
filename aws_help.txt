@@ -1,0 +1,44 @@
+AWS:
+
+1. Create EC2 instance.
+2. Download pem.key
+3. ssh id:
+ssh -i "/Users/user/Desktop/python_server_key.pem" ubuntu@ec2-3-144-27-177.us-east-2.compute.amazonaws.com
+
+4. Change chmod (if required)
+chmod 400 python_server_key.pem
+
+5. Open SSH in terminal
+6. change to root
+sudo -i
+
+7. apt update
+8. apt upgrade -y
+
+
+9. apt install python3-venv
+10. mkdir flask_app && cd flask_app
+11. source venv/bin/activate
+12. pip install Flask
+13. python -m flask --version
+
+
+14. apt install python3-pip -y
+15. $ pip install Flask
+16. pip install flask-restful
+17. pip install Flask-SQLAlchemy
+
+18. Install PostgreSQL:
+sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list'
+wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
+sudo apt-get update
+sudo apt-get -y install postgresql
+
+19. service postgresql service
+20. sudo -u postgres psql
+21. \conninfo
+22. \l
+24. \du
+25. \password postgres
+26. CREATE DATABASE weather_data;
+27. 
