@@ -1,0 +1,23 @@
+Git Hub:
+
+1. Create Account in github.
+2. Create new Repository "usweather"
+3. Open a terminal or command prompt window on your local machine and navigate to the root directory of your code.
+4. Initialize the local directory as a Git repository by running the following command:
+git init
+
+5.Add the remote origin for your GitHub repository by running the following command:
+git remote add origin <repository-url>
+
+where <repository-url> is the URL of your GitHub repository.
+
+6. Stage the files for committing by running the following command:
+git add .
+
+7. Commit the changes with a message describing the change by running the following command:
+git commit -m "Initial commit"
+
+8. Push the code to the GitHub repository by running the following command:
+git push -u origin master
+
+This will upload your code to the master branch of your GitHub repository.
