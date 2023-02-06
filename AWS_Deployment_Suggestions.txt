@@ -1,0 +1,28 @@
+AWS Deployment: Suggestions.
+
+Code Repository: 
+Use AWS CodeCommit to store the codebase. This provides a secure, scalable, and managed Git repository service.
+
+Serverless Deployment: 
+Use AWS Lambda to deploy the Flask API and scheduled data ingestion code. With AWS Lambda, there is no need to manage the underlying infrastructure.
+
+API Gateway: 
+Use Amazon API Gateway to expose the Flask API to the internet. This provides a managed service for creating, deploying, and managing RESTful APIs.
+
+Database: 
+Use Amazon RDS for PostgreSQL to manage the database. RDS is a managed database service that takes care of database administration tasks such as backups, patching, and replication.
+
+Scheduling: 
+Use Amazon CloudWatch Events to schedule the data ingestion code. This service allows you to create rules that trigger AWS Lambda functions or other AWS services on a regular schedule.
+
+Monitoring: 
+Use Amazon CloudWatch to monitor the health and performance of the deployed components. This service provides real-time visibility into the performance of the AWS resources and applications.
+
+
+Another AWS Deployment: Method
+
+1. Create EC2 instance. Load Ubuntu Server.
+2. Install Python, Flask, Flask-Restful API, PostgreSQL
+3. Git clone project
+4. Execute code.
+5. Create PostgreSQL Database on EC2 or Use AWS RDS feature to load PostgreSQL Database.
