@@ -1,0 +1,17 @@
+AWS GET points:
+
+http://3.136.138.207:5000
+http://3.136.138.207:5000/api/weather
+http://3.136.138.207:5000/api/weather/stats
+
+eg:
+
+http://3.136.138.207:5000/api/weather?date=1985-02-21&station=USC00111280
+
+http://3.136.138.207:5000/api/weather?date=1985-02-21&page=1&per_page=10
+
+http://3.136.138.207:5000/api/weather/stats?year=1985-01-01&station=USC00110072
+
+http://3.136.138.207:5000/api/weather/stats?year=1999-01-01&station=USC00110338&page=1&per_page=10
+
+http://3.136.138.207:5000/api/weather/stats?station=USC00110338&page=2&per_page=10
