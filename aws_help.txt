@@ -3,7 +3,7 @@ AWS:
 1. Create EC2 instance.
 2. Download pem.key
 3. ssh id:
-ssh -i "/Users/user/Desktop/python_server_key.pem" ubuntu@ec2-3-144-27-177.us-east-2.compute.amazonaws.com
+ssh -i "c:\users\gritt\downloads\python_server_key.pem" ubuntu@ec2-3-144-27-177.us-east-2.compute.amazonaws.com
 
 4. Change chmod (if required)
 chmod 400 python_server_key.pem
@@ -41,4 +41,7 @@ sudo apt-get -y install postgresql
 24. \du
 25. \password postgres
 26. CREATE DATABASE weather_data;
-27. 
+
+API code suffix:
+
+app.run(host='0.0.0.0', debug=True, port=5000)
